@@ -1,0 +1,21 @@
+@mixin text-styles($font-size, $font-weight, $line-height, $letter-spacing, $color) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+@mixin button($weight, $size, $text-color, $bg-color, $hover-bg-color, $hover-text-color) {
+    background: $bg-color;
+    transition: 0.4s;
+    font-weight: $weight;
+    font-size: $size;
+    color: $text-color;
+
+    &:hover {
+        cursor: pointer;
+        background: $hover-bg-color;
+        color: $hover-text-color;
+    }
+}
