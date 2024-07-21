@@ -1,0 +1,62 @@
+.footer {
+    background-color: $orange-color;
+
+    &__container {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 100px;
+    }
+
+    &__info {
+        @include text-styles(16px, 700, $white-color);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__phone {
+        @include text-styles(22px, 700, $white-color);
+        margin-bottom: 15px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        list-style: none;
+
+        &-link {
+            @include text-styles(16px, 700, $white-color);
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $blue-color;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__social {
+        @include text-styles(16px, 700, $white-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        &-icons {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    &__button {
+        @include button;
+    }
+}
+
