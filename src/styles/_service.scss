@@ -40,8 +40,7 @@
         margin-bottom: 15px;
         &:before {
           position: absolute;
-          content: "";
-          background: url('./assets/icons/service-icon.svg') center (center/cover) no-repeat;
+          content: url("../../assets/icons/service-icon.svg");
           display: block;
           left: -55px;
           top: -5px;
@@ -80,6 +79,7 @@
       }
       &:hover {
         background-color: $blue-color;
+        cursor: pointer;
         img {
           filter: brightness(0) saturate(100%) invert(100%);
         }
