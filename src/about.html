@@ -8,25 +8,37 @@
     <link rel="stylesheet" href="./styles/css/style.min.css">
 </head>
 <body>
-<main>
-    <section class="about">
-        <div class="about__container">
-            <h1 class="about__title">Туристическое агентство «BERGEN TOUR»</h1>
-            <h2 class="about__subtitle">оказывает следующие виды услуг:</h2>
-            <ul class="about__list">
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">продажа турпакетов</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">индивидуальные туры</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">групповые туры</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">организация деловых поездок, корпоративных мероприятий и отдыха сотрудников вашей компании</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">лечебно-оздоровительные туры</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">визовые услуги</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">страхование выезжающих зарубеж</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">круизы</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">бронирование гостиниц</li>
-                <li class="about__list-item"><img src="./assets/icons/travel-explore.svg" alt="travel-explore">продажа авиабилетов</li>
-            </ul>
+    <header class="header">
+        <div class="header__container">
+            <img src="assets/icons/logo.svg" alt="logo" class="header__logo">
+            <nav>
+                <div class="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__link">Подбор тура</a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Корпоративное обслуживание</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Подарочные сертификаты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="contacts">
+                <div class="contacts__info">
+                    <img src="assets/icons/phone.svg" alt="phone" class="contacts__icon">
+                    <div>
+                        <!-- <div class="contacts__text">Работаем с 10:00 до 19:00</div> -->
+                        <div class="contacts__phone">+7 778 900 67 21</div>
+                    </div>
+                </div>
+                <button class="contacts__button">заказать обратный звонок</button>
+            </div>
+            <!-- <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
         </div>
-    </section>
-</main>
+    </header>
+
+    <script src="js/burger-menu.js"></script>
 </body>
 </html>
