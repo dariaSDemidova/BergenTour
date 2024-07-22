@@ -1,0 +1,105 @@
+.tours {
+  &-container {
+    margin: 0 auto;
+    padding: 105px 40px 210px 40px;
+    max-width: 1920px;
+  }
+  &__header {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 80%;
+    margin-left: 260px;
+    .orange {
+    color: $orange-color;
+    }
+  }
+  &__subheader {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 80%;
+    margin-top: 20px;
+    margin-left: 260px;
+  }
+  &__wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 68px;
+  }
+  &__item {
+    position: relative;
+    width: 406px;
+    height: 667px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 10px rgba(#619EDB, 0.6);
+    padding: 16px;
+    &-label {
+      position: absolute;
+      background-color: $orange-color;
+      border-top-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      width: 132px;
+      height: 74px;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 25px 0;
+      top: 9px;
+      left: 8px;
+    }
+    &-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 40px;
+      margin: 0 auto;
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 22px;
+      text-transform: uppercase;
+    }
+    &-place {
+      position: relative;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 9px;
+      padding-left: 34px;
+      &:before {
+        position: absolute;
+        content: url("../../assets/icons/airplane-search.svg");
+        display: block;
+        left: 0px;
+        top: 0px;
+        width: 23px;
+        height: 24px;
+      }
+    }
+    &-date {
+      position: relative;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 9px;
+      padding-left: 34px;
+      color: $orange-color;
+      &:before {
+        position: absolute;
+        content: url("../../assets/icons/calendar-clock.svg");
+        display: block;
+        left: 0px;
+        top: 0px;
+        width: 23px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tours__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
