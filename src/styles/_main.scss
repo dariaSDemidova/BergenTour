@@ -28,8 +28,8 @@
   }
   &__item {
     position: relative;
-    width: 406px;
-    height: 667px;
+    max-width: 406px;
+    height: 639px;
     border-radius: 40px;
     box-shadow: 8px 8px 10px rgba(#619EDB, 0.6);
     padding: 16px;
@@ -46,8 +46,8 @@
       font-weight: 700;
       text-transform: uppercase;
       padding: 25px 0;
-      top: 9px;
-      left: 8px;
+      top: 12px;
+      left: 10px;
     }
     &-img {
       max-width: 100%;
@@ -59,6 +59,7 @@
       font-size: 20px;
       font-weight: 700;
       margin-top: 22px;
+      margin-left: 4px;
       text-transform: uppercase;
     }
     &-place {
@@ -71,8 +72,7 @@
         position: absolute;
         content: url("../../assets/icons/airplane-search.svg");
         display: block;
-        left: 0px;
-        top: 0px;
+        left: 4px;
         width: 23px;
         height: 24px;
       }
@@ -88,10 +88,120 @@
         position: absolute;
         content: url("../../assets/icons/calendar-clock.svg");
         display: block;
-        left: 0px;
-        top: 0px;
+        left: 2px;
         width: 23px;
         height: 24px;
+      }
+    }
+  }
+  &-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 1014px;
+    background-color: #fff;
+    z-index: 100;
+    padding: 30px 55px;
+    &__date {
+      position: relative;
+      font-size: 20px;
+      font-weight: 400;
+      color: $blue-color;
+      text-align: end;
+      &:before {
+        position: absolute;
+        content: url("../../assets/icons/calendar-modal.svg");
+        right: 128px;
+        top: -7px;
+        width: 34px;
+        height: 34px;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 75px;
+    }
+    &__header {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 100px;
+      color: $orange-color;
+    }
+    &__list {
+      list-style: none;
+      margin-top: 20px;
+      padding-left: 30px;
+      li {
+        position: relative;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        &:before {
+          position: absolute;
+          content: url("../../assets/icons/arrow-tours.svg");
+          left: -40px;
+          top: -4px;
+          width: 34px;
+          height: 34px;
+        }
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: start;
+      gap: 30px;
+      margin-top: 43px;
+    }
+    &__price {
+      font-size: 20px;
+      .price-title {
+        font-weight: 700;
+        color: $orange-color;
+      }
+      .price-value {
+        font-weight: 400;
+        color: #000;
+      }
+      &-info {
+        font-size: 15px;
+        font-weight: 700;
+        color: #000;
+        text-transform: lowercase;
+      }
+    }
+    &__include {
+      &-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+      }
+      &-list {
+        list-style: none;
+        margin-top: 3px;
+        li {
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 3px;
+        }
+      }
+    }
+    &__flight {
+      position: relative;
+      font-size: 20px;
+      font-weight: 700;
+      color: $blue-color;
+      text-align: end;
+      &:before {
+        position: absolute;
+        content: url("../../assets/icons/airplane.svg");
+        right: 185px;
+        top: -2px;
+        width: 25px;
+        height: 25px;
       }
     }
   }
