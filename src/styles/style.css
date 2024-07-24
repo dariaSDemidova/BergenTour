@@ -1,0 +1,150 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Thin.ttf") format("ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-ThinItalic.ttf") format("ttf");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-LightItalic.ttf") format("ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-BoldItalic.ttf") format("ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-BlackItalic.ttf") format("ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+.whyus {
+  background: rgb(143, 202, 241);
+  width: 100%;
+  height: 700px;
+}
+
+.whyussection {
+  background: url(../assets/img/bg3.jpg);
+  width: 50%;
+  height: 100%;
+}
+
+.cert {
+  background: url("../assets/img/backgroundCertificates.png");
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box {
+  height: 48 px;
+  border: 0px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificates {
+  /* H2 */
+  height: 48 px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
+  right: 230px;
+  color: rgb(255, 151, 0);
+  margin: 10px;
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.number {
+  width: 70px;
+  height: 70px;
+  flex: none;
+  border: 0;
+  margin: 10px;
+  position: relative;
+}
+
+.box1 {
+  position: relative;
+  right: 70px;
+}
+
+.box2 {
+  position: relative;
+  left: 120px;
+}
+
+.box3 {
+  position: relative;
+  left: 170px;
+}
+
+.text {
+  position: relative;
+  left: 10px;
+  margin: 0px 25px;
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}/*# sourceMappingURL=style.css.map */
