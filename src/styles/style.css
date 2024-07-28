@@ -65,16 +65,67 @@
   font-weight: 900;
   font-style: italic;
 }
-.whyus {
-  background: rgb(143, 202, 241);
-  width: 100%;
-  height: 700px;
+.container {
+  background-image: url(../assets/img/bg3.jpg);
+  background-color: rgb(143, 202, 241);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  height: 800px;
+  justify-content: space-between;
 }
 
 .whyussection {
-  background: url(../assets/img/bg3.jpg);
-  width: 50%;
+  align-items: center;
+}
+
+.services {
+  background-color: rgb(143, 202, 241);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  min-height: 150px;
+  justify-content: center;
+  width: 100%;
+}
+
+.img {
+  width: 100%;
   height: 100%;
+}
+
+.text {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(255, 151, 0);
+}
+
+.textLato900 {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(255, 151, 0);
+  align-items: flex-end;
+}
+
+.textLato800 {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Bold.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal;
+  color: rgb(255, 151, 0);
 }
 
 .cert {
