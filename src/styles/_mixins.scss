@@ -4,16 +4,20 @@
     color: $color;
 }
 
-@mixin button($weight, $size, $text-color, $bg-color, $hover-bg-color, $hover-text-color) {
-    background: $bg-color;
+@mixin button {
+    height: 50px;
+    width: 250px;
+    background: $blue-color;
     transition: 0.4s;
-    font-weight: $weight;
-    font-size: $size;
-    color: $text-color;
+    font-weight: 700;
+    font-size: 16px;
+    color: $white-color;
+    border-radius: 50px;
+    border: none;
 
     &:hover {
         cursor: pointer;
-        background: $hover-bg-color;
-        color: $hover-text-color;
+        background: $white-color;
+        color: $blue-color;
     }
 }

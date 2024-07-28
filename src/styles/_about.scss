@@ -1,0 +1,36 @@
+.about {
+    min-height: 1019px;
+    max-width: 1920px;
+    background: url('../../assets/img/bg_bag.jpg') center center/cover no-repeat;
+    padding: 100px 200px;
+
+    &__container {
+        max-width: 700px;
+    }
+
+    &__title {
+        @include text-styles(38px, 700, $orange-color);
+    }
+
+    &__subtitle {
+        @include text-styles(38px, 400, $orange-color);
+        font-style: italic;
+    }
+
+    &__list {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        &-item {
+            @include text-styles(20px, 400, $black-color);
+            text-transform: uppercase;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+    }
+}
