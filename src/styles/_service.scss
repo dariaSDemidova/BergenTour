@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.service {
+  &-container {
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #afd5ec;
+  }
+  &-wrapper {
+    display: flex;
+    gap: 100px;
+    margin: 0 auto;
+    padding: 70px;
+    max-width: 1920px;
+  }
+  &-block {
+    max-width: 1000px;
+    &__header {
+      font-size: 40px;
+    }
+    .orange {
+      color: $orange-color;
+    }
+    &__subheader {
+      font-size: 32px;
+      font-style: italic;
+      color: $orange-color;
+    }
+    &__list {
+      list-style: none;
+      margin-top: 45px;
+      padding-left: 55px;
+      li {
+        position: relative;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        &:before {
+          position: absolute;
+          content: url("../../assets/icons/service-icon.svg");
+          display: block;
+          left: -55px;
+          top: -5px;
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+  &-slider {
+    max-width: 500px;
+    overflow: hidden;
+    &__container {
+      overflow: hidden;
+    }
+    &__items {
+      display: flex;
+      transition: all 0.5s ease;
+    }
+    &__item {
+      flex: 0 0 100%;
+      max-height: 500px;
+      max-width: 500px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    &__btns {
+      display: flex;
+      justify-content: center;
+      gap: 26px;
+      margin-top: 27px;
+    }
+    &__btn {
+      background-color: #fff;
+      border: none;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      img {
+        padding-top: 5px;
+      }
+      &:hover {
+        background-color: $blue-color;
+        cursor: pointer;
+        img {
+          filter: brightness(0) saturate(100%) invert(100%);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
