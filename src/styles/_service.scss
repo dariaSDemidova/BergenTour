@@ -52,6 +52,7 @@
   }
   &-slider {
     max-width: 500px;
+    overflow: hidden;
     &__container {
       overflow: hidden;
     }
@@ -60,7 +61,14 @@
       transition: all 0.5s ease;
     }
     &__item {
+      flex: 0 0 100%;
       max-height: 500px;
+      max-width: 500px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
     }
     &__btns {
       display: flex;
