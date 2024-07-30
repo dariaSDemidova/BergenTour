@@ -37,28 +37,30 @@ function generateTourModalHTML(toursData) {
     contentDiv.appendChild(list);
     toursModal.appendChild(contentDiv);
 
-    const infoDiv = document.createElement('div');
-    infoDiv.className = 'tours-modal__info';
-
     const priceWrapper = document.createElement('div');
     priceWrapper.className = 'tours-modal__price-wrapper';
 
     const priceDiv = document.createElement('div');
     priceDiv.className = 'tours-modal__price';
-    priceDiv.innerHTML = `<span class="price-title">Стоимость:</span> <span class="price-value">${tour.price}</span>`;
+    priceDiv.innerHTML = `<span class="price-title">Стоимость:</span> <span class="price-value">${tour.price}</span> ₸`;
     priceWrapper.appendChild(priceDiv);
 
     const prepaymentDiv = document.createElement('div');
     prepaymentDiv.className = 'tours-modal__price';
-    prepaymentDiv.innerHTML = `<span class="price-title">Предоплата:</span> <span class="price-value">${tour.prepayment}</span>`;
+    prepaymentDiv.innerHTML = `<span class="price-title">Предоплата:</span> <span class="price-value">${tour.prepayment}</span> ₸`;
     priceWrapper.appendChild(prepaymentDiv);
 
-    // const priceInfoDiv = document.createElement('div');
-    // priceInfoDiv.className = 'tours-modal__price-info';
-    // priceInfoDiv.textContent = tourData.price_info;
-    // priceWrapper.appendChild(priceInfoDiv);
+    const priceInfoDiv = document.createElement('div');
+    priceInfoDiv.className = 'tours-modal__price-info';
+    priceInfoDiv.textContent = "остаток после получения визы";
+    priceWrapper.appendChild(priceInfoDiv);
 
-    infoDiv.appendChild(priceWrapper);
+    contentDiv.appendChild(priceWrapper);
+
+    const infoDiv = document.createElement('div');
+    infoDiv.className = 'tours-modal__info';
+
+    contentDiv.appendChild(infoDiv);
 
     const includeWrapper = document.createElement('div');
     includeWrapper.className = 'tours-modal__include-wrapper';
@@ -105,7 +107,8 @@ function generateTourModalHTML(toursData) {
 
     const flightDiv = document.createElement('div');
     flightDiv.className = 'tours-modal__flight';
-    flightDiv.textContent = toursData.flight_info;
+    flightDiv.textContent = tour.flight_info;
+    toursModal.appendChild(flightDiv);
   });
-  toursModal.appendChild(flightDiv);
 }
+

@@ -33,6 +33,7 @@
     border-radius: 40px;
     box-shadow: 8px 8px 10px rgba(#619EDB, 0.6);
     padding: 16px;
+    cursor: pointer;
     &-label {
       position: absolute;
       background-color: $orange-color;
@@ -120,15 +121,15 @@
     &__content {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-between;
       padding-left: 75px;
     }
-    &__header {
+    &__title {
       font-size: 48px;
       font-weight: 700;
       line-height: 100px;
       color: $orange-color;
+      text-align: center;
     }
     &__list {
       list-style: none;
@@ -158,6 +159,7 @@
     }
     &__price {
       font-size: 20px;
+      margin-top: 10px;
       .price-title {
         font-weight: 700;
         color: $orange-color;
@@ -171,6 +173,7 @@
         font-weight: 700;
         color: #000;
         text-transform: lowercase;
+        margin-top: 5px;
       }
     }
     &__include {
