@@ -1,18 +1,22 @@
-.container{
-    background-image:url(../assets/img/bg3.jpg);
-    background-color:rgb(143, 202, 241);
-display: flex;
-flex-direction: row;
-justify-content: center;
-background-repeat: no-repeat;
-background-position: 0px 0px;
-background-size: cover;
-height:800px;
-justify-content: space-between;
-}
-.whyussection {
+.containerServices {
+ 
+ 
+ background-image:url(../assets/img/bg3.jpg);
+ background-color:rgb(143, 202, 241);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
+ min-height:750px;
 
+ }
+.whyussection
+{
 align-items: center;
+min-height:150px;
+border: white;
 
 }
 .services
@@ -24,8 +28,21 @@ justify-content: center;
 background-repeat: no-repeat;
 background-position: 0px 0px;
 background-size: cover;
-min-height:150px;
+min-height:50px;
+justify-content: space-around;
+width:100%;
+}
+.servicescolor
+{
+    background-color:rgb(229, 235, 240); 
+    display: flex;
+flex-direction: row;
 justify-content: center;
+background-repeat: no-repeat;
+background-position: 0px 0px;
+background-size: cover;
+min-height:50px;
+justify-content: space-around;
 width:100%;
 }
  .img {
@@ -61,4 +78,79 @@ width:100%;
     font-weight: 800;
     font-style: normal;
     color:rgb(255, 151, 0);
+}
+.reviewssection
+{
+align-items: center;
+background-color:rgb(143, 202, 241); 
+width: 320px;
+border-radius: 15px;
+height: 150px;
+padding:20px;
+
+}
+.reviewsservices
+{
+   
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-repeat: no-repeat;
+background-position: 0px 0px;
+background-size: cover;
+min-height:150px;
+justify-content: space-around;
+width:100%;
+height: 300px;
+align-items: center;
+padding: 20px;
+column-gap: 190px;
+}
+.imgReview
+{
+width: 50px;
+top: 0; right: 0;
+position: relative;
+}
+.reviewColumn
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+
+}
+.review {
+    font-size: 10px;
+    position: relative;
+    height:auto;
+}
+.reviewscert
+{
+   
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-repeat: no-repeat;
+background-position: 0px 0px;
+background-size: cover;
+min-height:150px;
+justify-content: space-around;
+width:100%;
+height: 300px;
+align-items: center;
+padding: 20px;
+column-gap: 10px;
+}
+.reviewRow
+{
+    display: flex;
+    flex-direction:column;
+
+
+}
+.imgCert
+{
+width:270px;
+top: 0; right: 0;
+position: relative;
 }
