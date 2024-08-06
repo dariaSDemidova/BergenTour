@@ -73,14 +73,24 @@
   justify-content: space-around;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   min-height: 750px;
 }
 
 .whyussection {
-  align-items: center;
+  align-items: flex-end;
   min-height: 150px;
   border: white;
+  margin-top: 8px;
+  margin-left: 40px;
+  justify-content: center;
+}
+
+.reviewsectionheader {
+  align-items: flex-end;
+  min-height: 150px;
+  border: white;
+  justify-content: center;
 }
 
 .services {
@@ -89,11 +99,13 @@
   flex-direction: row;
   justify-content: center;
   background-repeat: no-repeat;
-  background-position: 0px 0px;
   background-size: cover;
   min-height: 50px;
-  justify-content: space-around;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .servicescolor {
@@ -127,7 +139,37 @@
   src: url("../assets/fonts/Lato-Bold.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
-  color: rgb(255, 151, 0);
+  color: #F19D38;
+  align-content: end;
+  font-size: 30px;
+}
+
+.arrow {
+  margin-left: 190px;
+  margin-top: 60px;
+  position: absolute;
+}
+
+.arrow2 {
+  margin-left: 190px;
+  margin-top: 60px;
+  position: absolute;
+}
+
+.name {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.textLato900 {
+  font-family: "Lato";
+  font-display: swap;
+  src: url("../assets/fonts/Lato-Bold.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+  color: #F19D38;
+  font-size: 36px;
 }
 
 .textLato800 {
@@ -136,7 +178,8 @@
   src: url("../assets/fonts/Lato-Bold.ttf") format("ttf");
   font-weight: 800;
   font-style: normal;
-  color: rgb(255, 151, 0);
+  color: #F19D38;
+  font-size: 36px;
 }
 
 .reviewssection {
@@ -154,7 +197,8 @@
   height: 360px;
   border-radius: 15px;
   height: 150px;
-  padding: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .inputsumm {
@@ -171,15 +215,14 @@
   border-radius: 15px;
   border: 0cap;
   height: 32px;
-  text-align: center;
   color: white;
   font-family: "Lato";
   font-display: swap;
   src: url("../assets/fonts/Lato-Black.ttf") format("ttf");
   font-size: 20px;
   font-style: normal;
-  align-items: center;
-  margin-top: 10px;
+  align-content: center;
+  padding-bottom: 15px;
 }
 
 .reviewsservices {
@@ -230,10 +273,10 @@
   justify-content: space-around;
   width: 100%;
   height: 300px;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .reviewRow {
@@ -251,9 +294,10 @@
 }
 
 .inputorder {
-  z-index: -2;
-  margin-top: 20px;
-  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  margin-bottom: 10px;
 }
 
 .inputsection {
@@ -261,7 +305,9 @@
   flex-direction: column;
   width: 200px;
   align-content: center;
-  row-gap: 40px;
+  row-gap: 60px;
+  justify-content: center;
+  align-self: center;
 }
 
 .rowsection {
@@ -276,9 +322,10 @@
 .certbackground {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 250px;
   align-items: center;
   align-content: center;
+  width: 650px;
 }
 
 .cert {
