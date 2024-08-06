@@ -104,16 +104,16 @@
     z-index: 100;
     padding: 30px 55px;
     &__date {
-      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      right: 55px;
       font-size: 20px;
       font-weight: 400;
       color: $blue-color;
-      text-align: end;
       &:before {
-        position: absolute;
+        display: inline-block;
         content: url("../../assets/icons/calendar-modal.svg");
-        right: 128px;
-        top: -7px;
         width: 34px;
         height: 34px;
       }
