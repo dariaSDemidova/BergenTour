@@ -267,3 +267,17 @@ column-gap: 40px;
     width: 650px;
   
 }
+.kartinka {
+   display:none;
+    cursor: pointer;
+}
+.show{
+    display: block;
+    width: 70 px;
+    border: 2px;
+opacity: 100;
+z-index: 100;
+background-image: url(http://ultraimg.com/images/Ho6hQWs.jpg) center no-repeat;
+background-size: cover;
+  filter: blur(2px);
+}
