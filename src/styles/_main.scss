@@ -34,7 +34,7 @@ width:100%;
 }
 .servicescolor
 {
-    background-color:rgb(229, 235, 240); 
+     
     display: flex;
 flex-direction: row;
 justify-content: center;
@@ -45,6 +45,13 @@ min-height:50px;
 justify-content: space-around;
 width:100%;
 }
+
+.backgroundcolor{
+ background-color: white;
+}
+.backgroundimg{
+    background-image: url(../assets/img/beach.jpeg);
+   }
  .img {
   
     width: 100%;
@@ -62,13 +69,7 @@ width:100%;
 }
 
 .textLato900{
-    font-family: 'Lato';
-    font-display: swap;
-    src: url('../assets/fonts/Lato-Black.ttf') format('ttf');
-    font-weight: 900;
-    font-style: normal;
-    color:rgb(255, 151, 0);
-    align-items: flex-end;
+ 
 }
 
 .textLato800{
@@ -89,6 +90,43 @@ height: 150px;
 padding:20px;
 
 }
+
+.certsection
+{
+align-items: center;
+
+width: 360px;
+height: 360px;
+border-radius: 15px;
+height: 150px;
+padding:20px;
+
+}
+ .inputsumm{
+    background-color:rgb(143, 202, 241); 
+width: 120px;
+border-radius: 15px;
+border: 0cap;
+height:22px;
+ }
+
+
+ .buttoncert{
+    background-color:rgb(143, 202, 241); 
+    width: 100%;
+    border-radius: 15px;
+    border: 0cap;
+    height:32px;  
+    text-align: center;
+    color: white;
+    font-family: 'Lato';
+    font-display: swap;
+    src: url('../assets/fonts/Lato-Black.ttf') format('ttf');
+    font-size: 20px;
+    font-style: normal;
+    align-items: center;
+    margin-top: 10px;
+ }
 .reviewsservices
 {
    
@@ -122,7 +160,7 @@ position: relative;
 .review {
     font-size: 10px;
     position: relative;
-    height:auto;
+    height:200;
 }
 .reviewscert
 {
@@ -150,7 +188,40 @@ column-gap: 10px;
 }
 .imgCert
 {
-width:270px;
+width:290px;
 top: 0; right: 0;
-position: relative;
+position: absolute;
+margin-top: -20px;
+z-index: 0;
+}
+.inputorder
+{
+    z-index: -2;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.inputsection
+{
+    display: flex;
+    flex-direction: column;
+width:200px;  
+align-content: center;
+row-gap: 40px;
+
+}
+.rowsection{
+    display: flex;
+    flex-direction: row;
+    width :200px;
+align-items: center;
+column-gap: 40px;
+
+}
+
+.certbackground{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    align-items: center;
+    align-content: center;
 }
