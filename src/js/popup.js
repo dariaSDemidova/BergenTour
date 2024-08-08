@@ -1,3 +1,50 @@
+    //открытие/закрытие модального окна
+    document.addEventListener('DOMContentLoaded', (e) => {
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const openButton = document.getElementById('contacts__button');
+        const closeButton = document.getElementById('popup__close');
+    
+        openButton.addEventListener('click', () => {
+            overlay.style.display = 'block';
+            popup.style.display = 'block';
+        });
+    
+        closeButton.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        });
+    });
+    
+
+    //подключение api городов Казахстана
+    document.addEventListener('DOMContentLoaded', function() {
+        const citiesSelect = document.getElementById('cities-select');
+    
+        const query = `
+            [out:json];
+            area["ISO3166-1"="KZ"][admin_level=2];
+            node["place"="city"](area);
+            out body;
+        `;
+        
+        const apiUrl = `https://overpass-api.de/api/interpreter?data=${encodeURIComponent(query)}`;
+    
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                data.elements.forEach(city => {
+                    const option = document.createElement('option');
+                    option.value = city.tags.name;
+                    option.textContent = city.tags.name;
+                    citiesSelect.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error fetching city data:', error));
+    });
+    
+
+    //валидация телефонного номера 
     document.addEventListener('DOMContentLoaded', function () {
         const phoneInput = document.getElementById('phone');
         const submitButton = document.getElementById('submit-button');

@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <img src="assets/icons/logo.svg" alt="logo" class="header__logo">
+            <img src="./assets/icons/logo.svg" alt="logo" class="header__logo">
             <nav>
                 <div class="nav">
                     <ul class="menu">
@@ -23,13 +23,12 @@
             </nav>
             <div class="contacts">
                 <div class="contacts__info">
-                    <img src="assets/icons/phone.svg" alt="phone" class="contacts__icon">
+                    <img src="./assets/icons/phone.svg" alt="phone" class="contacts__icon">
                     <div>
-                        <!-- <div class="contacts__text">Работаем с 10:00 до 19:00</div> -->
                         <div class="contacts__phone">+7 778 900 67 21</div>
                     </div>
                 </div>
-                <button class="contacts__button">заказать обратный звонок</button>
+                <button id="contacts__button" class="contacts__button">заказать обратный звонок</button>
             </div>
             <!-- <div class="hamburger">
                 <span></span>
@@ -63,7 +62,7 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <img src="assets/icons/logo.svg" alt="logo" class="footer__logo">
+            <img src="./assets/icons/logo.svg" alt="logo" class="footer__logo">
             <div class="footer__info">
                 <div class="footer__phone">+7 778 900 67 21</div>
                 <div class="footer__address">010000, Республика Казахстан, город Астана,
@@ -91,7 +90,27 @@
             </div>
         </div>
     </footer>
-    
-    <script src="js/burger-menu.js"></script>
+
+
+    <div id="overlay" class="overlay"></div>
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <span id="popup__close" class="popup__close">&times;</span>
+            <div class="popup__title">Давайте мы вам перезвоним?</div>
+            <select id="cities-select" class="popup__input popup__select" name="cities"></select>
+            <input id="phone" type="tel" class="popup__input" placeholder="+7 (999) 999-99-99">
+            <div id="phone-error" class="popup__error"></div>
+            <select class="popup__input popup__select" name="time">
+                <option value="12">Перезвонить в 12:00</option>
+                <option value="14">Перезвонить в 14:00</option>
+                <option value="16">Перезвонить в 16:00</option>
+                <option value="18">Перезвонить в 18:00</option>
+            </select>
+            <a href="https://wa.me/77789006721" id="submit-button" class="popup__button" target="_blank" disabled>Жду звонка! <img class="button-image" src="./assets/icons/white-plane.svg" alt="plane"></a>
+            <div class="popup__text">Мы перезвоним в удобное Вам время</div>
+        </div>
+    </div>
+
+    <script src="./js/popup.js"></script>
 </body>
 </html>
