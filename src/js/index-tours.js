@@ -173,10 +173,17 @@ function generateTourModal(tourInfo) {
   modalBody.appendChild(flightDiv);
 
   modal.style.display = 'block';
+
+  document.body.classList.add('tours-modal-open');
+}
+
+function closeTourModal() {
+  document.getElementById('toursModal').style.display = 'none';
+  document.body.classList.remove('tours-modal-open');
 }
 
 document.getElementById('toursModal').addEventListener('click', (e) => {
   if (e.target === e.currentTarget) {
-    document.getElementById('toursModal').style.display = 'none';
+    closeTourModal();
   }
 });

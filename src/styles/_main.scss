@@ -5,17 +5,15 @@
     max-width: 1920px;
   }
   &__header {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 80%;
+    @include text-styles(48px, 700, $black-color);
+    line-height: 90%;
     margin-left: 260px;
-    .orange {
+    &-orange {
     color: $orange-color;
     }
   }
   &__subheader {
-    font-size: 36px;
-    font-weight: 400;
+    @include text-styles(36px, 400, $black-color);
     line-height: 80%;
     margin-top: 20px;
     margin-left: 260px;
@@ -42,9 +40,7 @@
       width: 132px;
       height: 74px;
       text-align: center;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 700;
+      @include text-styles(20px, 700, $white-color);
       text-transform: uppercase;
       padding: 25px 0;
       top: 12px;
@@ -57,16 +53,14 @@
       margin: 0 auto;
     }
     &-title {
-      font-size: 20px;
-      font-weight: 700;
+      @include text-styles(20px, 700, $black-color);
       margin-top: 22px;
       margin-left: 4px;
       text-transform: uppercase;
     }
     &-place {
       position: relative;
-      font-size: 20px;
-      font-weight: 700;
+      @include text-styles(20px, 700, $black-color);
       margin-top: 9px;
       padding-left: 34px;
       &:before {
@@ -80,11 +74,9 @@
     }
     &-date {
       position: relative;
-      font-size: 20px;
-      font-weight: 700;
+      @include text-styles(20px, 700, $orange-color);
       margin-top: 9px;
       padding-left: 34px;
-      color: $orange-color;
       &:before {
         position: absolute;
         content: url("../../assets/icons/calendar-clock.svg");
@@ -96,53 +88,59 @@
     }
   }
   &-modal {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    padding: 30px 55px;
+    z-index: 1;
+    &-open {
+      overflow: hidden;
+    }
     &-container {
-      background-color: #fff;
+      position: relative;
+      max-width: 1014px;
+      max-height: 90%;
+      overflow-y: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $white-color;
+      z-index: 2;
+      padding: 40px;
     }
     &__date {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-      right: 55px;
-      font-size: 20px;
-      font-weight: 400;
-      color: $blue-color;
+      @include text-styles(20px, 400, $blue-color);
+      margin-bottom: 20px;
       &:before {
         display: inline-block;
         content: url("../../assets/icons/calendar-modal.svg");
         width: 34px;
         height: 34px;
+        margin-right: 5px;
       }
     }
     &__content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding-left: 75px;
+      padding-left: 45px;
     }
     &__title {
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 100px;
-      color: $orange-color;
+      @include text-styles(48px, 700, $orange-color);
       text-align: center;
     }
     &__list {
       list-style: none;
       margin-top: 20px;
-      padding-left: 30px;
       li {
         position: relative;
-        font-size: 20px;
-        font-weight: 400;
+        @include text-styles(20px, 400, $black-color);
         margin-bottom: 15px;
         &:before {
           position: absolute;
@@ -162,53 +160,44 @@
       margin-top: 43px;
     }
     &__price {
-      font-size: 20px;
       margin-top: 10px;
       .price-title {
-        font-weight: 700;
-        color: $orange-color;
+        @include text-styles(20px, 700, $orange-color);
       }
       .price-value {
-        font-weight: 400;
-        color: #000;
+        @include text-styles(20px, 400, $black-color);
       }
       &-info {
-        font-size: 15px;
-        font-weight: 700;
-        color: #000;
+        @include text-styles(15px, 700, $black-color);
         text-transform: lowercase;
         margin-top: 5px;
       }
     }
     &__include {
       &-title {
-        font-size: 20px;
-        font-weight: 700;
-        color: #000;
+        @include text-styles(20px, 700, $black-color);
       }
       &-list {
         list-style: none;
         margin-top: 3px;
         li {
-          font-size: 20px;
-          font-weight: 400;
+          @include text-styles(20px, 400, $black-color);
           margin-bottom: 3px;
         }
       }
     }
     &__flight {
-      position: relative;
-      font-size: 20px;
-      font-weight: 700;
-      color: $blue-color;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      @include text-styles(20px, 700, $blue-color);
       text-align: end;
       &:before {
-        position: absolute;
+        display: inline-block;
         content: url("../../assets/icons/airplane.svg");
-        right: 185px;
-        top: -2px;
         width: 25px;
         height: 25px;
+        margin-right: 5px;
       }
     }
   }

@@ -93,7 +93,7 @@
       "price": "1 550 000",
       "prepayment": null,
       "img": "./assets/img/tours/image4.jpeg",
-      "title": "Автотур по исландии и швейцарии",
+      "title": "Автотур по Исландии и Швейцарии",
       "place": "Исландия - Швейцария",
       "date": ["с 3 по 13 июня"],
       "content": [
@@ -365,7 +365,7 @@
       "price": "2 600 000",
       "prepayment": null,
       "img": "./assets/img/tours/image13.jpeg",
-      "title": "По мотивам латинской америки",
+      "title": "По мотивам Латинской Америки",
       "place": "Колумбия, Эквадор, Перу",
       "date": ["с 18 по 28 июля"],
       "content": [
