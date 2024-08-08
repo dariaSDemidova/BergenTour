@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="./styles/css/style.min.css">
+</head>
+<body>
+
+    <div class="popup">
+        <div class="popup__title">Давайте мы вам перезвоним?</div>
+        <select id="cities-select" class="popup__input popup__select" name="cities">
+        </select>
+        <input id="phone" type="tel" class="popup__input" placeholder="+7 (999) 999-99-99">
+        <div id="phone-error" class="popup__error"></div>
+        <select class="popup__input popup__select" name="time">
+                <option value="12">Перезвонить в 12:00</option>
+                <option value="12">Перезвонить в 14:00</option>
+                <option value="12">Перезвонить в 16:00</option>
+                <option value="12">Перезвонить в 18:00</option>
+            </select>
+            <button id="submit-button" class="popup__button" disabled>Жду звонка! <img class="button-image" src="./assets/icons/white-plane.svg" alt="plane"></button>
+            <div class="popup__text">Мы перезвоним в удобное Вам время</div>
+    </div>
+
+    <script src="./js/cities.js"></script>
+    <script src="./js/phone-validation.js"></script>
+</body>
+</html>
