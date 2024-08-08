@@ -174,3 +174,9 @@ function generateTourModal(tourInfo) {
 
   modal.style.display = 'block';
 }
+
+document.getElementById('toursModal').addEventListener('click', (e) => {
+  if (e.target === e.currentTarget) {
+    document.getElementById('toursModal').style.display = 'none';
+  }
+});
