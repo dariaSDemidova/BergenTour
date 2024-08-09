@@ -1,20 +1,73 @@
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1; 
+}
+
 .about {
-    min-height: 1019px;
-    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background: url('../../assets/img/bg_bag.jpg') center center/cover no-repeat;
     padding: 100px 200px;
+    position: relative;
+
+    @media screen and (max-width: 1440px) {
+        padding: 100px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 20px;
+    }
+
+    &::before {
+        @media screen and (max-width: 768px) {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: 1;
+        }
+    }
 
     &__container {
-        max-width: 700px;
+        width: 700px;
+        position: relative;
+        z-index: 2;
+
+        @media screen and (max-width: 1440px) {
+            width: 500px;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 300px;
+        }
     }
 
     &__title {
-        @include text-styles(38px, 700, $orange-color);
+        @include text-styles(38px, 700, $blue-color);
+
+        @media screen and (max-width: 768px) {
+            font-size: 28px;
+        }
     }
 
     &__subtitle {
-        @include text-styles(38px, 400, $orange-color);
+        @include text-styles(38px, 400, $blue-color);
         font-style: italic;
+
+        @media screen and (max-width: 768px) {
+            font-size: 28px;
+        }
     }
 
     &__list {
@@ -22,6 +75,14 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        @media screen and (max-width: 1440px) {
+            width: 350px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 300px;
+        }
         
         &-item {
             @include text-styles(20px, 400, $black-color);
@@ -30,7 +91,16 @@
             display: flex;
             align-items: center;
             gap: 20px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                font-weight: 900;
+            }
+
+            img {
+                height: 32px;
+                width: 32px;
+            }
         }
-        
     }
 }

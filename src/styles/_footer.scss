@@ -35,6 +35,11 @@
         margin-bottom: 15px;
     }
 
+    &__mail {
+        color: $white-color;
+        text-decoration: none;
+    }
+
     &__menu {
         display: flex;
         flex-direction: column;
@@ -75,6 +80,9 @@
 
     &__button {
         @include button;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
     }
 }
-

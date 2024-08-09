@@ -41,7 +41,10 @@
         @media screen and (min-width: 768px) and (max-width: 1440px) {
             width: 100%;
             justify-content: space-between;
-            gap: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            gap: 0;
         }
     }
 
