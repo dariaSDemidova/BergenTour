@@ -331,17 +331,19 @@
 .kartinka {
   display: none;
   cursor: pointer;
+  width: 450px;
+  margin-left: 30px;
 }
 
 .show {
-  display: block;
-  width: 70 px;
+  display: inline-flex;
+  width: 35 px;
   border: 2px;
   opacity: 100;
-  z-index: 100;
-  background-image: url(http://ultraimg.com/images/Ho6hQWs.jpg) center no-repeat;
+  z-index: 999;
+  background-color: rgb(206, 214, 196);
   background-size: cover;
-  filter: blur(2px);
+  position: absolute;
 }
 
 .cert {
