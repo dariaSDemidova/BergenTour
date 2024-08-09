@@ -12,7 +12,6 @@ main {
     min-height: 100vh;
     background: url('../../assets/img/bg_bag.jpg') center center/cover no-repeat;
     padding: 100px 200px;
-    position: relative;
 
     @media screen and (max-width: 1440px) {
         padding: 100px;
@@ -23,26 +22,12 @@ main {
     }
 
     @media screen and (max-width: 768px) {
-        padding: 20px;
-    }
-
-    &::before {
-        @media screen and (max-width: 768px) {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(255, 255, 255, 0.5);
-            z-index: 1;
-        }
+        background: none;
+        background-color: #B1D6F1;
     }
 
     &__container {
         width: 700px;
-        position: relative;
-        z-index: 2;
 
         @media screen and (max-width: 1440px) {
             width: 500px;
@@ -94,7 +79,6 @@ main {
 
             @media screen and (max-width: 768px) {
                 font-size: 16px;
-                font-weight: 900;
             }
 
             img {
