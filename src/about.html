@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас</title>
     <link rel="shortcut icon" href="./assets/icons/logo.svg">
+    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/css/style.min.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <img src="./assets/icons/logo.svg" alt="logo" class="header__logo">
-            <nav>
-                <div class="nav">
-                    <ul class="menu">
-                        <li class="menu__item"><a href="#" class="menu__link">Подбор тура</a></li>
-                        <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Корпоративное обслуживание</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Подарочные сертификаты</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="header__main">
+                <a href="./index.html"><img src="./assets/icons/logo.svg" alt="logo" class="header__logo"></a>
+                <nav>
+                    <div class="nav">
+                        <ul class="menu">
+                            <li class="menu__item"><a href="./index.html" class="menu__link">Подбор тура</a></li>
+                            <li class="menu__item"><a href="./about.html" class="menu__link">О нас</a></li>
+                            <li class="menu__item"><a href="./service.html" class="menu__link">Корпоративное обслуживание</a></li>
+                            <li class="menu__item"><a href="./certificates.html" class="menu__link">Подарочные сертификаты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
             <div class="contacts">
                 <div class="contacts__info">
                     <img src="./assets/icons/phone.svg" alt="phone" class="contacts__icon">
@@ -30,11 +33,11 @@
                 </div>
                 <button id="contacts__button" class="contacts__button">заказать обратный звонок</button>
             </div>
-            <!-- <div class="hamburger">
+            <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div> -->
+            </div>
         </div>
     </header>
 
@@ -112,5 +115,6 @@
     </div>
 
     <script src="./js/popup.js"></script>
+    <script src="./js/burger-menu.js"></script>
 </body>
 </html>
